@@ -5,9 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tetris</title>
   <link rel="stylesheet" href="style.css" />
+  <script>
+    try {
+      if (localStorage.getItem('theme') === 'light') document.documentElement.dataset.theme = 'light';
+    } catch (e) {}
+  </script>
 </head>
 <body>
   <h1 class="title">TETRIS</h1>
+  <button id="theme-toggle" type="button" aria-label="Cambiar tema">Modo claro</button>
 
   <div class="wrapper">
     <div class="game-container">
