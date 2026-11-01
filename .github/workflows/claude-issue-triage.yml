@@ -83,6 +83,7 @@ jobs:
                ## Riesgos y casos borde
                ## Cómo verificar (jugando en el navegador; no hay tests automatizados)
                ## Preguntas abiertas (solo si aplica)
+            FORMATO: todo el contenido de `triage-diagnosis.md` debe estar en Markdown válido que GitHub (GitHub Flavored Markdown) renderice correctamente: encabezados `##`, listas con `-` o `1.`, código en línea con `` `backticks` ``, bloques de código con triple backtick y lenguaje (p. ej. ```js), tablas GFM y checklists `- [ ]` cuando aplique. Deja una línea en blanco entre bloques, no uses HTML crudo y cierra siempre los bloques de código.
             Sé concreto y conciso. No publiques comentarios: el workflow publica el contenido de `triage-diagnosis.md`.
 
       - name: Publicar o actualizar comentario de diagnóstico
