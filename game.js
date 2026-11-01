@@ -265,6 +265,7 @@ function loop(ts) {
       lockPiece();
     }
   }
+  if (gameOver) return; // endGame() corrió dentro de este tick: no reprogramar el loop
   draw();
   animId = requestAnimationFrame(loop);
 }
